@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+source: https://api-docs.sydecar.io/docs/resources/guide/
+description: >-
+  Sydecar's test surface is environment-based rather than magic-value based.
+  A production environment is tied to real ledger and fund-management activity
+  on behalf of your SPVs, while any number of staging (development) environments
+  can be provisioned for testing. Sydecar issues sandbox tokens on request; no
+  public test-card / fixture catalog is published (SPV administration is not a
+  card-payments flow). Captured from the Sydecar API Overview and Guide.
+docs:
+- https://api-docs.sydecar.io/docs/resources/guide/
+modes:
+- name: production
+  notes: >-
+    Exactly one production environment per account. Tied to ledger and fund
+    management activities on behalf of your SPVs. Production API tokens are
+    issued on sign-up.
+- name: staging
+  notes: >-
+    As many staging (development) environments as required, each with a single
+    API user and one or more API keys. Sandbox tokens for staging are provided
+    by Sydecar on request.
+test_credentials:
+  how_to_obtain: >-
+    Request sandbox tokens from Sydecar; multiple sandbox tokens can be issued
+    for a staging environment. No self-serve test values are published.
+notes: >-
+  No published magic test cards, bank accounts, hosted test tokens, or test
+  clocks were found on the public documentation. Sydecar separates test and live
+  activity by environment/token rather than by key prefix.

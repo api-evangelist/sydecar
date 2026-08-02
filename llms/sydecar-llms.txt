@@ -1,0 +1,47 @@
+# Sydecar
+
+> Sydecar is a deal execution platform for venture investors that automates the operational back office of Special Purpose Vehicles (SPVs) — banking, compliance, KYC/AML, contracts, capital calls, and investor reporting. The Sydecar API lets developers run funding processes programmatically on Sydecar's legal, banking, and compliance rails, with the SPV as the foundational unit.
+
+Method: generated from apis.yml + public Sydecar API documentation (api-docs.sydecar.io). Last generated 2026-07-21.
+
+## API
+
+- [Sydecar API Docs](https://api-docs.sydecar.io/): Developer documentation portal (password-protected) for the Sydecar API.
+- [Overview and Guide](https://api-docs.sydecar.io/docs/resources/guide/): Getting-started guide covering authentication and environments.
+- API host: https://api.sydecar.io
+- Authentication: Bearer token on the HTTP Authorization header. API keys are tied to a single API user account. Production tokens are issued on sign-up; sandbox/staging tokens are provided on request.
+- Environments: one production environment (tied to ledger and fund management for your SPVs) plus any number of staging (development) environments.
+- Core resources: SPV, Subscription, Document, Person.
+
+## Products
+
+- [SPVs](https://sydecar.io/spvs): Launch and administer Special Purpose Vehicles.
+- [Syndicates](https://sydecar.io/syndicate): Run investment syndicates.
+- [Secondary SPVs](https://sydecar.io/secondary-spvs): SPVs for secondary transactions.
+- [Layered SPVs](https://sydecar.io/layered-spvs): Multi-layer SPV structures.
+
+## Solutions
+
+- [Emerging Managers](https://sydecar.io/solutions/emerging-managers)
+- [Venture Firms](https://sydecar.io/solutions/venture-firms)
+- [Family Offices](https://sydecar.io/solutions/family-offices)
+
+## Resources
+
+- [Blog](https://sydecar.io/blog)
+- [Learning Center](https://sydecar.io/learn)
+- [Guides](https://sydecar.io/guides)
+- [Glossary](https://sydecar.io/glossary)
+- [FAQs](https://sydecar.io/faq)
+- [Pricing](https://sydecar.io/pricing)
+
+## Company
+
+- [About](https://sydecar.io/about)
+- [Careers](https://sydecar.io/careers)
+- Contact: hello@sydecar.io
+
+## Legal
+
+- [Terms of Service](https://sydecar.io/policies/terms-of-service)
+- [Privacy Notice](https://sydecar.io/policies/privacy-notice)

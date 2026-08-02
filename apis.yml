@@ -1,7 +1,25 @@
 aid: sydecar
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sydecar.png
 name: Sydecar
-description: Sydecar is a company surfaced as a portfolio company of anthemis and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Sydecar is a deal execution platform for venture investors that automates
+  the operational back office of Special Purpose Vehicles (SPVs) — banking, compliance,
+  KYC/AML, contracts, capital calls, and investor reporting — so syndicate leads, emerging
+  fund managers, venture firms, and family offices can launch and administer SPVs,
+  syndicates, secondary SPVs, and layered SPVs in hours instead of weeks. Sydecar also
+  publishes a developer API (api-docs.sydecar.io) for programmatically creating and
+  managing SPVs, subscriptions, and documents.
 url: https://raw.githubusercontent.com/api-evangelist/sydecar/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +27,69 @@ x-backed-by:
 - anthemis
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Financial Services
+- Fintech
+- Venture Capital
+- SPV
+- Investment
+- Compliance
+- API
+apis:
+- name: Sydecar API
+  description: The Sydecar API lets developers programmatically run funding processes
+    on Sydecar's legal, banking, and compliance rails, with the Special Purpose Vehicle
+    (SPV) as the foundational unit — create, find, and update SPVs, manage subscriptions,
+    and handle documents.
+  humanURL: https://api-docs.sydecar.io/
+  baseURL: https://api.sydecar.io
+  tags:
+  - SPV
+  - Venture Capital
+  - Fintech
+  properties:
+  - type: Documentation
+    url: https://api-docs.sydecar.io/
+  - type: APIReference
+    url: https://api-docs.sydecar.io/
+  - type: GettingStarted
+    url: https://api-docs.sydecar.io/docs/resources/guide/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/sydecar-domain-security.yml
+- type: Authentication
+  url: authentication/sydecar-authentication.yml
+- type: Sandbox
+  url: sandbox/sydecar-sandbox.yml
+- type: LLMsTxt
+  url: llms/sydecar-llms.txt
+- type: Website
+  url: https://sydecar.io
+- type: Blog
+  url: https://sydecar.io/blog
+- type: Pricing
+  url: https://sydecar.io/pricing
+- type: SignUp
+  url: https://app.sydecar.io/login
+- type: Login
+  url: https://app.sydecar.io/login
+- type: Support
+  url: https://sydecar.io/faq
+- type: TermsOfService
+  url: https://sydecar.io/policies/terms-of-service
+- type: PrivacyPolicy
+  url: https://sydecar.io/policies/privacy-notice

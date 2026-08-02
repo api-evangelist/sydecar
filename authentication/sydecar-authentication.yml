@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+source: https://api-docs.sydecar.io/docs/resources/guide/
+summary:
+  types:
+  - http
+description: >-
+  The Sydecar API authenticates every request with a Bearer token supplied on
+  the HTTP Authorization header. Tokens are issued as API keys tied to a single
+  API user account (one account may hold more than one key). Sydecar provisions
+  production API tokens on sign-up and issues separate sandbox/staging tokens on
+  request, so credentials are scoped per environment. Captured from the public
+  Sydecar API "Overview and Guide" documentation.
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  location: header
+  header: Authorization
+  format: 'Authorization: Bearer <api_key>'
+  description: >-
+    All API calls authenticate via a Bearer token on the Authorization header.
+    Each API key is associated with a single API user account, though one API
+    user account can control more than one API key.
+  source: https://api-docs.sydecar.io/docs/resources/guide/
+environments:
+- name: production
+  notes: >-
+    A single production environment per account, tied to ledger and fund
+    management activities on behalf of your SPVs. Production API tokens are
+    provided when you sign up for the service.
+- name: staging
+  notes: >-
+    As many staging (development) environments as required. Each staging
+    environment has a single API user, with one or more API keys. Sandbox tokens
+    are provided on request for testing.
+docs:
+- https://api-docs.sydecar.io/docs/resources/guide/
